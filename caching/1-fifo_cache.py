@@ -1,4 +1,4 @@
- #!/usr/bin/env python3
+#!/usr/bin/env python3
 """First-In First-Out caching module.
 """
 from collections import OrderedDict
@@ -31,4 +31,3 @@ class FIFOCache(BaseCaching):
         """Retrieves an item by key.
         """
         return self.cache_data.get(key, None)
-    
