@@ -3,7 +3,7 @@
 Definition of class BasicAuth
 """
 import base64
-from . import Auth
+from .auth import Auth
 from typing import TypeVar
 
 from models.user import User
@@ -94,4 +94,3 @@ class BasicAuth(Auth):
                     if email is not None:
                         return self.user_object_from_credentials(email, pword)
         return
-  
